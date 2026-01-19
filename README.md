@@ -2,8 +2,7 @@
 
 > **LMSFNet: Enhancing Camouflaged Object Detection via Lightweight Multi-Scale Structural and Semantic Fusion**
 >
-> [Paper Link]() | [Zenodo Archive]() | [Pretrained Models](通过网盘分享的文件：Pretrained Models.zip
-> 链接: https://pan.baidu.com/s/14hYByGQJJDz0897-ZmMDfA?pwd=3uvy 提取码: 3uvy)
+> [Paper Link]() | [Zenodo Archive]() | [Pretrained Models](链接: https://pan.baidu.com/s/14hYByGQJJDz0897-ZmMDfA?pwd=3uvy 提取码: 3uvy)
 
 ## Table of Contents
 - [Abstract](#abstract)
@@ -39,7 +38,7 @@ python Train.py --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSE
 
 ## 4. Evaluation
 
-- Change the file path to your GT and testing path in [eval.py](https://github.com/whyandbecause/SDRNet/edit/main/evaltools/eval.py), then run it to get your evaluation results.
+- Change the file path to your GT and testing path in [eval.py](), then run it to get your evaluation results.
 
 ## 5. Results download
 
