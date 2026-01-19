@@ -1,0 +1,49 @@
+# LMSFNet
+
+> **LMSFNet: Enhancing Camouflaged Object Detection via Lightweight Multi-Scale Structural and Semantic Fusion**
+>
+> [Paper Link]() | [Zenodo Archive]() | [Pretrained Models](通过网盘分享的文件：Pretrained Models.zip
+> 链接: https://pan.baidu.com/s/14hYByGQJJDz0897-ZmMDfA?pwd=3uvy 提取码: 3uvy)
+
+## Table of Contents
+- [Abstract](#abstract)
+- [Environment Setup](#environment-setup)
+- [Training & Testing](#training--testing)
+- [Pretrained Models](#pretrained-models)
+- [Experimental Results](#experimental-results)
+- [Citation](#citation)
+- [License](#license)
+
+## Abstract
+Camouflaged object detection (COD) remains a challenging task due to the high visual similarity between targets and their background, weak boundary cues, and significant scale variations. Existing methods often suffer from structural degradation caused by repeated downsampling, semantic inconsistencies in multi-scale fusion, and insufficient sensitivity to small objects. To address these issues, we propose LMSFNet, a lightweight multi-scale fusion network designed to enhance detection accuracy while maintaining computational efficiency. Our approach integrates three key modules: a Multi-Scale Small-object Structure Enhancement Module (MSSEM) to restore fine-grained details and weak boundaries; a Cross-Scale Feature Interaction (CFI) module to align semantic information across scales and mitigate fusion conflicts; and a Global-Local Context Fusion (GLCF) module to jointly model long-range dependencies and local structures. Experiments on three benchmark datasets—CAMO,COD10K,and NC4K—demonstrate that LMSFNet achieves competitive performance with only 26.2M parameters and 21.6 GFLOPs, outperforming several state-of-the-art methods in terms of boundary continuity and small-object detection. Furthermore, LMSFNet exhibits strong generalisation capability in downstream tasks such as polyp segmentation and crack detection, underscoring its practical applicability. This work highlights the potential of lightweight, multi-scale fusion strategies for advancing COD in real-world scenarios.![moxingtu](assets/moxingtu.png)
+
+## Environment Setup
+### 1.Prerequisites
+- Python 3.8
+- PyTorch 1.12.0
+- CUDA 12.8 
+
+### 2.Install Dependencies
+1. First, activate your experimental virtual environment (refer to the previous environment export steps)
+2. Install all dependencies with one click:
+```bash
+pip install -r requirements.txt
+```
+
+## 3.Training & Testing
+
+```bash
+python Train.py --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSETPATH  --save_path YOUR_CHECKPOINTPATH
+ & python Test.py --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSETPATH  --save_path YOUR_CHECKPOINTPATH
+```
+
+## 4. Evaluation
+
+- Change the file path to your GT and testing path in [eval.py](https://github.com/whyandbecause/SDRNet/edit/main/evaltools/eval.py), then run it to get your evaluation results.
+
+## 5. Results download
+
+The prediction results of our SDRNet are stored on [BaiDu Drive](通过网盘分享的文件：Pretrained Models.zip
+链接: https://pan.baidu.com/s/14hYByGQJJDz0897-ZmMDfA?pwd=3uvy 提取码: 3uvy) please check.
+
+## 6.Citation
