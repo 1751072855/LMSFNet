@@ -2,7 +2,7 @@
 
 > **LMSFNet: Enhancing Camouflaged Object Detection via Lightweight Multi-Scale Structural and Semantic Fusion**
 >
-> [Paper Link]() | [Zenodo Archive]() | [Pretrained Models](链接: https://pan.baidu.com/s/14hYByGQJJDz0897-ZmMDfA?pwd=3uvy 提取码: 3uvy)
+> [Paper Link]() | [Pretrained Models](链接: https://pan.baidu.com/s/14hYByGQJJDz0897-ZmMDfA?pwd=3uvy 提取码: 3uvy)
 
 ## Table of Contents
 - [Abstract](#abstract)
@@ -43,5 +43,6 @@ python Train.py --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSE
 ## 5. Results download
 
 The prediction results of our SDRNet are stored on [BaiDu Drive]() please check.
+
 
 ## 6.Citation
